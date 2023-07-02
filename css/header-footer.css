@@ -172,6 +172,9 @@
     text-decoration: none;
     color: white;
 }
+.button-mobile {
+    display: none;
+}
 .button:hover {
     background: var(--main);
     transition: all 0.2s;
@@ -207,9 +210,14 @@
         background-color: transparent;
         cursor: pointer;
         position: fixed;
-        top: 15px;
+        top: 30px;
         right: 15px;
         z-index: 2;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu-button-scroll {
+        top: 15px;
+        transition: all 0.2s ease-in-out;
     }
     .menu-close {
         position: fixed;
@@ -228,5 +236,13 @@
     }
     #nav {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-mobile {
+        display: block;
+        position: absolute;
+        bottom: 30px;
     }
 }
