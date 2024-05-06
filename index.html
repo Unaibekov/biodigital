@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,280 +7,221 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<header class="header">
-    <div class="header-container">
-        <a href="#top" class="logo-link">
-            <img class="logo" src="img/logo-bio.svg" alt="logo-white">
-        </a>
-        <button class="menu-button">
-            <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 3H29.5" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-                <path d="M3 15H29.5" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-                <path d="M3 27H29.5" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-            </svg>
-        </button>
-        <div class="nav">
-            <button class="menu-close">
-                <svg width="33" height="29" viewBox="0 0 33 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 14H29.5" stroke="var(--main)" stroke-width="5" stroke-linecap="round"/>
-                    <path d="M18.3137 3L29.6274 14.3137L18.3137 25.6274" stroke="var(--main)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-            <a class="link" href="#about">О нас</a>
-            <a class="link" href="#services">Услуги</a>
-            <a class="link" href="#products">Продукция</a>
-            <a class="link" href="#contacts">Контакты</a>
-            <a href="tel:+79172254234" class="button button-mobile">Позвонить</a>
-
-        </div>
-        <a href="tel:+79172254234" class="button button-desktop">Позвонить</a>
-
+<header>
+    <div class="header-content">
+        <img class="logo" src="img/logo-bio.svg" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#work">Направления работы</a></li>
+                <li><a href="#partners">Партнеры</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="button main-button header-button">Связаться с нами</div>
     </div>
 </header>
-    
-<div id="hero" class="hero">
-    <div class="layers">
-        <div data-rellax-speed="-3" class="layer-header rellax">
-            <img class="layer-header-logo" src="img/logo-bio.svg" alt="">
-            <div class="logo-mobile">
-                <img class="logo-mobile-el" src="img/logo-bio-el.svg" alt="">
-                <img class="logo-mobile-text" src="img/logo-bio-text.svg" alt="">
-
-            </div>
-            <img class="layer-header-logo-bg" src="img/layer-header-logo-bg.svg" alt="">
-            <img class="layer layer-5" src="img/blur-circle.svg" alt="">
+<section class="hero">
+    <div class="hero-content">
+        <div>
+            <div class="hero-content-title">Биоцифра — проект,<br>совмещающийцифровые<br>и эко-услуги</div>
+            <div class="button hero-button">Получить консультацию</div>
         </div>
-        <img data-rellax-speed="0" class="layer layer-1 rellax" src="img/01.svg" alt="">
-        <img data-rellax-speed="10" class="layer layer-2 rellax" src="img/02.svg" alt="">
-        <img data-rellax-speed="0" class="layer layer-3 rellax" src="img/03.svg" alt="">
     </div>
-    <a href="#hero" id="top-second" class="top-second"><span></span></a>
-
-</div>
+</section>
 <section id="about">
-    <div style="position: relative;" class="container">
-        <div class="main-title">О нас</div>
-        <div class="about-text">
-            <p>Биоцифра — проект «Академии цифрового творчества», совмещающий цифровые и экоуслуги. </p>
-            <p>Мы продаём деревья, выращенные в наших биолабораториях, а также производим на заказ контент: снимаем и монтируем видео, делаем дизайн, выпускаем брендированную и сувенирную продукцию.</p>
-        </div>
-        <img  data-rellax-speed="-2" class="layer layer-4 rellax" src="img/logo-bio-el-blue.svg" alt="">
-    </div>
-</section>
-
-<section class="bg-light" id="services">
     <div class="container">
-        <div style="color: var(--main);" class="main-title">Услуги</div>
-        <div class="items">
-            <div class="services-item">
-                <div class="lines"></div>
-                <div class="angles"></div>
-                <article>
-                    <div class="services-item-title">Медиа-студия</div>
-                    <div class="services-item-text">
-                        <div class="bullit">&#8226;</div>
-                        <div>Производство рекламных роликов</div>
-                    </div>
-                    <div class="services-item-text">
-                        <div class="bullit">&#8226;</div>
-                        <div>Видеосъемка</div>
-                    </div>
-                    <div class="services-item-text">
-                        <div class="bullit">&#8226;</div>
-                        <div>Производство корпоративных роликов</div>
-                    </div>
-                    <div class="services-item-text">
-                        <div class="bullit">&#8226;</div>
-                        <div>Аренда оборудования</div>
-                    </div>
-                </article>
-            </div>
-            <div class="services-item">
-                <div class="lines"></div>
-                <div class="angles"></div>
-                <article>
-                    <div class="services-item-title">Дизайн-студия</div>
-                    <div class="services-item-text">
-                        <div class="bullit">&#8226;</div>
-                        <div>Разработка логотипов</div>
-                    </div>
-                    <div class="services-item-text">
-                        <div class="bullit">&#8226;</div>
-                        <div>Разработка фирменного стиля</div>
-                    </div>
-                    <div class="services-item-text">
-                        <div class="bullit">&#8226;</div>
-                        <div>Сувенирная продукция, мерч</div>
-                    </div>
-                    <div class="services-item-text">
-                        <div class="bullit">&#8226;</div>
-                        <div>Брендированная продукция</div>
-                    </div>
-                </article>
-            </div>
-            <div class="services-item">
-                <div class="lines"></div>
-                <div class="angles"></div>
-                <article>
-                    <div class="services-item-title">Продажа растений и&nbsp;деревьев, выращенных школьниками в биолаборатории</div>
-                </article>
-            </div>
-            <div style="cursor: pointer;" class="services-item other-open">
-                <div class="lines"></div>
-                <div class="angles"></div>
-                <article style="display: flex; align-items: center; justify-content: center; height: 100%;">
-                    <div class="services-item-title">Прочее</div>
-                </article>
-            </div>
+        <div class="section-image about-image"></div>
+        <div class="section-content about-content">
+            <div class="title">о нас</div>
+            <p>Мы продаём деревья, выращенные в наших биолабораториях, и производим на заказ контент: снимаем и монтируем видео, делаем дизайн, выпускаем брендированную сувенирную продукцию</p>
         </div>
     </div>
 </section>
-
-<section class="other" id="other">
+<section id="info">
     <div class="container">
-        <div class="main-title">Услуги</div>
-        <div class="columns">
-            <ol>
-                <li class="item-other">Выращивание рассады</li>
-                <li class="item-other">Деятельность зрелищно-развлекательная прочая</li>
-                <li class="item-other">Деятельность в области исполнительских искусств</li>
-                <li class="item-other">Прокат и аренда прочих предметов личного пользования и хозяйственно-бытового назначения</li>
-                <li class="item-other">Деятельность профессиональная, научная и техническая прочая, не включенная в другие группировки</li>
-                <li class="item-other">Деятельность специализированная в области дизайна</li>
-                <li class="item-other">Деятельность рекламных агентств</li>
-                <li class="item-other">Научные исследования и разработки в области общественных и гуманитарных наук</li>
-                <li class="item-other">Консультирование по вопросам коммерческой деятельности и управления</li>
-                <li class="item-other">Деятельность по оказанию услуг в области бухгалтерского учета, по проведению финансового аудита, по налоговому консультированию</li>
-                <li class="item-other">Деятельность в области права</li>
-                <li class="item-other">Управление недвижимым имуществом за вознаграждение или на договорной основе</li>
-                <li class="item-other">Аренда и управление собственным или арендованным недвижимым имуществом</li>
-                <li class="item-other">Покупка и продажа собственного недвижимого имущества</li>
-                <li class="item-other">Деятельность web-порталов</li>
-                <li class="item-other">Деятельность, связанная с использованием вычислительной техники и информационных технологий, прочая</li>
-                <li class="item-other">Деятельность по управлению компьютерным оборудованием</li>
-                <li class="item-other">Разработка компьютерного программного обеспечения</li>
-                <li class="item-other">Деятельность в области звукозаписи и издания музыкальных произведений</li>
-                <li class="item-other">Деятельность по распространению кинофильмов, видеофильмов и телевизионных программ</li>
-                <li class="item-other">Производство кинофильмов, видеофильмов и телевизионных программ</li>
-                <li class="item-other">Издание прочих программных продуктов</li>
-                <li class="item-other">Виды издательской деятельности прочие</li>
-                <li class="item-other">Издание книг</li>
-                <li class="item-other">Деятельность по предоставлению прочих мест для временного проживания</li>
-                <li class="item-other">Торговля розничная прочая вне магазинов, палаток, рынков</li>
-                <li class="item-other">Торговля розничная по почте или по информационно-коммуникационной сети Интернет</li>
-                <li class="item-other">Торговля розничная бывшими в употреблении товарами в магазинах</li>
-                <li class="item-other">Торговля розничная прочая в специализированных магазинах</li>
-                <li class="item-other">Торговля розничная цветами и другими растениями, семенами, удобрениями, домашними животными и кормами для домашних животных в специализированных магазинах</li>
-                <li class="item-other">Торговля розничная одеждой в специализированных магазинах</li>
-                <li class="item-other">Торговля розничная книгами в специализированных магазинах</li>
-                <li class="item-other">Торговля розничная прочая в неспециализированных магазинах</li>
-                <li class="item-other">Торговля оптовая компьютерами, периферийными устройствами к компьютерам и программным обеспечением</li>
-                <li class="item-other">Торговля оптовая прочими бытовыми товарами</li>
-                <li class="item-other">Торговля оптовая прочими свежими овощами</li>
-                <li class="item-other">Деятельность агентов по оптовой торговле живыми животными</li>
-                <li class="item-other">Изготовление печатных форм и подготовительная деятельность</li>
-                <li class="item-other">Выращивание прочих многолетних культур</li>
-                <li class="item-other">Выращивание специй, пряно-ароматических, эфиромасличных и лекарственных культур</li>
-                <li class="item-other">Выращивание культур для производства напитков</li>
-                <li class="item-other">Выращивание плодов масличных культур</li>
-                <li class="item-other">Выращивание прочих плодовых деревьев, кустарников и орехов</li>
-                <li class="item-other">Выращивание семечковых и косточковых культур</li>
-                <li class="item-other">Выращивание цитрусовых культур</li>
-                <li class="item-other">Выращивание тропических и субтропических культур</li>
-                <li class="item-other">Выращивание винограда</li>
-                <li class="item-other">Производство бумаги и картона</li>
-                <li class="item-other">Предоставление услуг в области лесоводства и лесозаготовок</li>
-                <li class="item-other">Лесоводство и прочая лесохозяйственная деятельность</li>
-                <li class="item-other">Предоставление услуг в области растениеводства</li>
-                <li class="item-other">Выращивание прочих однолетних культур</li>
-                <li class="item-other">Выращивание овощей, бахчевых, корнеплодных и клубнеплодных культур, грибов и трюфелей</li>
-                <li class="item-other">Выращивание зерновых (кроме риса), зернобобовых культур и семян масличных</li>
-            </ol>
+        <div class="section-content info-content">
+            <div class="title">Продажа растений и деревьев, выращенных школьниками в биолаборатории</div>
+            <p>«Росток добра» – это проект, в рамках которого деревья и растения выращиваются в биолаборатории с помощью увлечённых ботаникой школьников.</p>
+            <p>Для выращивания саженцев используется осина триплоидная, обладающая высокой устойчивостью к заболеваниям и древесной продуктивностью.</p>
+            <p>Рассада высаживается в пробирки, затем в мини-теплицы и, на финальном этапе, в открытый грунт для адаптации к естественной среде.</p>
+            <p>Все саженцы продаются в фирменной упаковке</p>
+            <div>
+                <div class="button main-button">Заказать растение</div>
+            </div>
         </div>
-
-        <div class="button other-hidden">Свернуть</div>
+        <div class="section-image info-image"></div>
     </div>
 </section>
+<div style="position: relative;">
+    <div class="slider variable-width">
+        <div class="slider-image">
+            <img src="img/slide (1).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (2).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (3).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (1).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (2).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (3).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (1).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (2).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (3).jpg" alt="">
+        </div>
+    </div>
+    <button class="slick-prev">Назад</button>
+    <button class="slick-next">Вперед</button>
+</div>
 
-<section class="bg-dark" id="products">
+<section id="design">
     <div class="container">
-        <div class="main-title">Наша продукция</div>
-        <div class="products">
-            <div class="product">
-                <div class="product-1">
-                    <img class="product-image" src="img/nfc.png" alt="">
-                    <div class="product-border"></div>
-                </div>
+        <div class="section-content info-content">
+            <div class="title">Дизайн-студия</div>
+            <div class="buttons">
+                <div class="button button-secondary">ЛОГОТИПЫ</div>
+                <div class="button button-secondary">ФИРМЕННЫЙ СТИЛЬ</div>
+                <div class="button button-secondary">АЙДЕНТИКА</div>
+                <div class="button button-secondary">МЕРЧ</div>
+                <div class="button button-secondary">ВЫСТАВОЧНЫЕ СТЕНДЫ</div>
+                <div class="button button-secondary">ПОЛИГРАФИЯ</div>
             </div>
-            <div class="product">
-                <div class="product-2">
-                    <img class="product-image" src="img/nfc 2.png" alt="">
-                    <div class="product-border"></div>
-                </div>
+            <div class="mt30">
+                <p>Мы продумываем стиль и палитру продукции, которая делает бизнес узнаваемым.</p>
+                <p>Оформляем визитки, грамоты и бейджи, роллапы и лайтбоксы, а также любую другую наружную рекламу.</p>
+                <p>Оформляем стенды с нуля так, чтобы их заметил каждый.</p>
+                <p>Печатаем в вашем фирменном стиле на наших футболках и шопперах</p>
             </div>
-            <div class="product">
-                <div class="product-3">
-                    <img class="product-image" src="img/rostok.png" alt="">
-                    <div class="product-border"></div>
-                </div>
+            <div>
+                <div class="button main-button mt30">Отправить заявку</div>
             </div>
         </div>
-        <img class="blur-circle-left" src="img/blur-circle.png" alt="">
+        <div class="section-image info-image"></div>
     </div>
 </section>
-
-<section class="bg-light" id="contacts">
+<section id="design">
     <div class="container">
-        <div style="color: var(--main);" class="main-title">Контакты</div>
-        <div class="container-inner">
-            <div class="item">
-                <div class="item-info">
-                    <div class="item-title">Руководитель</div>
-                    <p>Мефодьева (Шавалеева) Гузель Рафисовна</p>
-                </div>
+        <div class="section-content info-content">
+            <div class="title">Медиа-студия</div>
+            <div class="buttons">
+                <div class="button button-secondary">РЕКЛАМНЫЕ РОЛИКИ</div>
+                <div class="button button-secondary">ВИДЕОСЪЕМКИ</div>
+                <div class="button button-secondary">ФОТОСЪЁМКИ</div>
+                <div class="button button-secondary">МОНТАЖ РОЛИКОВ</div>
+                <div class="button button-secondary">АРЕНДА ОБОРУДОВАНИЯ</div>
             </div>
-            <div class="item">
-                <div class="item-info">
-                    <div class="item-title">Контакты</div>
-                    <p>+7 (917) 225-42-34</p>
-                    <p>INFO@ALMETRIKA.RU</p>
-                </div>
+            <div class="mt30">
+                <p>Мы создаём цепляющие фото и видео для решения ваших маркетинговых задач.</p>
+                <p>Делаем профессиональный монтаж видеоматериалов, цветокоррекцию и добавление спецэффектов и анимации.</p>
+                <p>Предлагаем услуги аренды профессионального оборудования для видеосъёмки и производства контента.</p>
+                <p>Помогаем воплотить ваши идеи в создании уникального и запоминающегося контента</p>
             </div>
-            <div class="item">
-                <div class="item-info">
-                    <div class="item-title">Юридический адрес</div>
-                    <p>г. Альметьевск, ул. Шевченко, д. 180, (2-ой корпус Школы анимации «А1002»)</p>
-                </div>
-            </div>
-            <div class="circles circles-3">
-                <img class="circle-logo" src="img/logo-bio-el.svg" alt="">
-                <div class="circle-image-right c-i-right-3"></div>
-                <div class="circle-fill-right c-f-right-3"></div>
+            <div>
+                <div class="button main-button mt30">Отправить заявку</div>
             </div>
         </div>
-
-        <img class="blur-circle-left" src="img/blur-circle.png" alt="">
+        <div class="section-image info-image"></div>
     </div>
 </section>
-<section id="footer">
+<div style="position: relative;">
+    <div class="slider variable-width">
+        <div class="slider-image">
+            <img src="img/slide (1).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (2).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (3).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (1).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (2).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (3).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (1).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (2).jpg" alt="">
+        </div>
+        <div class="slider-image">
+            <img src="img/slide (3).jpg" alt="">
+        </div>
+    </div>
+    <button class="slick-prev">Назад</button>
+    <button class="slick-next">Вперед</button>
+</div>
+<section id="design">
     <div class="container">
-        <div class="footer-wrapper">
-            <img class="footer-logo" src="img/logo-bio.svg" alt="">
-            <div class="footer-desc">© 2023 АНО ДО «Академия цифрового творчества». <br>Все права защищены</div>
+        <div class="partners">
+            <div class="title">Наши партнеры</div>
+            <div class="partners-logo">
+                <div class="slider-image">
+                    <img src="img/logo-partner-bio.svg" alt="">
+                </div>
+                <div class="slider-image">
+                    <img src="img/logo-partner-tn.svg" alt="">
+                </div>
+                <div class="slider-image">
+                    <img src="img/logo-partner-act.svg" alt="">
+                </div>
+                <div class="slider-image">
+                    <img src="img/logo-partner-daa.svg" alt="">
+                </div>
+            </div>
         </div>
     </div>
 </section>
-
+<section id="design">
+    <div class="container">
+        <div class="footer">
+            <div>
+                <img class="logo" src="img/logo-bio.svg" alt="logo">
+                <div>423455, г.Альметьевск, ул.Шевченко, д.180 (2-й корпус Школы анимации «А1002»)</div>
+            </div>
+            <div>
+                <div class="title">Мы на связи</div>
+                <div>
+                    <div>+7 (917) 225-42-34</div>
+                    <div>INFO@ALMETRIKA.RU</div>
+                </div>
+            </div>
+            <div>
+                <div class="title">Наш Телеграм-бот</div>
+                <div>
+                    <img class="logo" src="img/logo-bio.svg" alt="logo">
+                    <div>@biodigit_bot_example</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/script.js"></script>
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-<script>
-    var rellax = new Rellax('.rellax');
-</script>
 </body>
 </html>
