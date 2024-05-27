@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('/fonts/Lato-Regular.ttf'),
+    url('/fonts/Lato-Regular.ttf'),
+}
+@font-face {
+    font-family: 'Lato-Medium';
+    src: url('/fonts/Lato-Medium.ttf'),
+    url('/fonts/Lato-Medium.ttf'),
+}
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('/fonts/Lato-Bold.ttf'),
+    url('/fonts/Lato-Bold.ttf'),
+}
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +23,7 @@
 }
 body {
     background-color: var(--body);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato-Regular', sans-serif;
     position: relative;
     margin: 0;
     padding: 0;
@@ -20,7 +36,7 @@ body::-webkit-scrollbar {
     width: 13px;
 }
 body::-webkit-scrollbar-thumb {
-    background-color: #4f7302;
+    background-color: #18ae72;
 }
 h1, h2, h3 {
     margin-top: 0px!important;
@@ -32,7 +48,7 @@ p {
     line-height: 1.4;
 }
 .button {
-    padding: 14px 30px;
+    padding: 15px 30px;
     border-radius: 40px;
     text-transform: uppercase;
     letter-spacing: 1.4;
@@ -54,7 +70,10 @@ p {
     border: 1px solid #1E1E1E;
 }
 .header-button {
-    margin-right: 8px;
+    margin: 12px;
+}
+.tag {
+    padding: 10px 20px!important;
 }
 /* header =============== */
 header {
@@ -62,16 +81,16 @@ header {
     padding: 20px 40px;
 }
 .header-content {
-    width: 100%;
+    width: 1320px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
     border-radius: 40px;
     background-color: white;
+    margin: auto;
 }
 .logo {
-    margin-left: 24px;
+    margin-left: 40px;
 }
 nav ul {
     list-style: none;
@@ -84,27 +103,33 @@ nav ul li {
     margin: 0 20px;
 }
 nav ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
     text-decoration: none;
     color: #333;
 }
 .mt30 {
     margin-top: 30px;
 }
+.mt60 {
+    margin-top: 60px;
+}
 /* hero ===================== */
 .hero {
-    padding: 0 40px 40px 40px;
-    width: 100%;
-    height: calc(100vh - 100px);
+    margin: auto;
 }
 .hero-button {
     background-color: white;
     color: black;
-    display: inline-block;
-    margin-top: 20px;
+    display: inline-flex;
+    margin-top: 28px;
+    padding: 8px !important;
+    align-items: center;
+    gap: 14px;
 }
 .hero-content {
     background: url(../img/hero.jpg) no-repeat center center / cover;
-    height: 100%;
+    height: 648px;
     border-radius: 40px;
     overflow: hidden;
     padding: 60px;
@@ -121,6 +146,7 @@ section {
     padding: 0 40px 40px 40px;
 }
 .container {
+    max-width: 1320px;
     width: 100%;
     margin: 0 auto;
 }
@@ -136,6 +162,7 @@ section {
     align-items: center;
     gap: 40px;
 }
+
 #info .container {
     display: flex;
     align-items: center;
@@ -157,11 +184,11 @@ section {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     height: 320px;
     background: white;
     border-radius: 40px;
-    padding: 54px;
+    padding: 60px;
 }
 .section-content p {
     margin-top: 0;
@@ -179,6 +206,10 @@ section {
 } 
 .info-content {
     height: 756px;
+}
+.slider-block {
+    position: relative;
+    padding-bottom: 40px;
 }
 .slider-image {
     margin: 10px;
@@ -239,6 +270,44 @@ section {
 .footer > div {
     flex-basis: 33%;
 }
-.footer > div > .logo {
+.footer-logo {
+    height: 34px;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.block .title {
     margin: 0;
+}
+.logo-block {
+    align-items: flex-start;
+}
+.contact-block {
+    align-items: center;
+}
+.contacts {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+}
+.bot-block {
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 60px;
+}
+.button-bot {
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: auto;
+    gap: 17px;
+    background-color: white;
+    border-radius: 60px;
 }
