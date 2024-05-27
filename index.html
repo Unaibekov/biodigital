@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
-
 </head>
 <body>
 <header>
@@ -28,19 +27,29 @@
     </div>
 </header>
 <section class="hero">
-    <div class="hero-content">
+    <div class="container">
+        <div class="hero-content">
         <div>
             <div class="hero-content-title">Биоцифра — проект,<br>совмещающийцифровые<br>и эко-услуги</div>
-            <div class="button hero-button">Получить консультацию</div>
+            <div class="button hero-button">
+                <div>Получить консультацию</div>
+                <svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="45" height="46" rx="22.5" fill="white"/>
+                    <rect x="0.5" y="0.5" width="45" height="46" rx="22.5" stroke="black"/>
+                    <path d="M12.5 22.75C12.0858 22.75 11.75 23.0858 11.75 23.5C11.75 23.9142 12.0858 24.25 12.5 24.25V22.75ZM33.5 23.5L34.0375 24.023C34.3208 23.7319 34.3208 23.2681 34.0375 22.977L33.5 23.5ZM23.9625 32.227C23.6736 32.5239 23.6801 32.9987 23.977 33.2875C24.2739 33.5764 24.7487 33.5699 25.0375 33.273L23.9625 32.227ZM25.0375 13.727C24.7487 13.4301 24.2739 13.4236 23.977 13.7125C23.6801 14.0013 23.6736 14.4761 23.9625 14.773L25.0375 13.727ZM12.5 24.25H33.5V22.75H12.5V24.25ZM25.0375 33.273L34.0375 24.023L32.9625 22.977L23.9625 32.227L25.0375 33.273ZM23.9625 14.773L32.9625 24.023L34.0375 22.977L25.0375 13.727L23.9625 14.773Z" fill="#16141C"/>
+                </svg>
+            </div>
         </div>
     </div>
+    </div>
+    
 </section>
 <section id="about">
     <div class="container">
         <div class="section-image about-image"></div>
         <div class="section-content about-content">
             <div class="title">о нас</div>
-            <p>Мы продаём деревья, выращенные в наших биолабораториях, и производим на заказ контент: снимаем и монтируем видео, делаем дизайн, выпускаем брендированную сувенирную продукцию</p>
+            <p>Мы продаём деревья, выращенные в наших биолабораториях, и&nbsp;производим на заказ контент: снимаем и монтируем видео, делаем дизайн, выпускаем брендированную сувенирную продукцию</p>
         </div>
     </div>
 </section>
@@ -53,13 +62,13 @@
             <p>Рассада высаживается в пробирки, затем в мини-теплицы и, на финальном этапе, в открытый грунт для адаптации к естественной среде.</p>
             <p>Все саженцы продаются в фирменной упаковке</p>
             <div>
-                <div class="button main-button">Заказать растение</div>
+                <div class="button main-button mt60">Заказать растение</div>
             </div>
         </div>
         <div class="section-image info-image"></div>
     </div>
 </section>
-<div style="position: relative;">
+<div class="slider-block">
     <div class="slider variable-width">
         <div class="slider-image">
             <img src="img/slide (1).jpg" alt="">
@@ -98,12 +107,12 @@
         <div class="section-content info-content">
             <div class="title">Дизайн-студия</div>
             <div class="buttons">
-                <div class="button button-secondary">ЛОГОТИПЫ</div>
-                <div class="button button-secondary">ФИРМЕННЫЙ СТИЛЬ</div>
-                <div class="button button-secondary">АЙДЕНТИКА</div>
-                <div class="button button-secondary">МЕРЧ</div>
-                <div class="button button-secondary">ВЫСТАВОЧНЫЕ СТЕНДЫ</div>
-                <div class="button button-secondary">ПОЛИГРАФИЯ</div>
+                <div class="button button-secondary tag">ЛОГОТИПЫ</div>
+                <div class="button button-secondary tag">ФИРМЕННЫЙ СТИЛЬ</div>
+                <div class="button button-secondary tag">АЙДЕНТИКА</div>
+                <div class="button button-secondary tag">МЕРЧ</div>
+                <div class="button button-secondary tag">ВЫСТАВОЧНЫЕ СТЕНДЫ</div>
+                <div class="button button-secondary tag">ПОЛИГРАФИЯ</div>
             </div>
             <div class="mt30">
                 <p>Мы продумываем стиль и палитру продукции, которая делает бизнес узнаваемым.</p>
@@ -112,7 +121,7 @@
                 <p>Печатаем в вашем фирменном стиле на наших футболках и шопперах</p>
             </div>
             <div>
-                <div class="button main-button mt30">Отправить заявку</div>
+                <div class="button main-button mt60">Отправить заявку</div>
             </div>
         </div>
         <div class="section-image info-image"></div>
@@ -123,11 +132,11 @@
         <div class="section-content info-content">
             <div class="title">Медиа-студия</div>
             <div class="buttons">
-                <div class="button button-secondary">РЕКЛАМНЫЕ РОЛИКИ</div>
-                <div class="button button-secondary">ВИДЕОСЪЕМКИ</div>
-                <div class="button button-secondary">ФОТОСЪЁМКИ</div>
-                <div class="button button-secondary">МОНТАЖ РОЛИКОВ</div>
-                <div class="button button-secondary">АРЕНДА ОБОРУДОВАНИЯ</div>
+                <div class="button button-secondary tag">РЕКЛАМНЫЕ РОЛИКИ</div>
+                <div class="button button-secondary tag">ВИДЕОСЪЕМКИ</div>
+                <div class="button button-secondary tag">ФОТОСЪЁМКИ</div>
+                <div class="button button-secondary tag">МОНТАЖ РОЛИКОВ</div>
+                <div class="button button-secondary tag">АРЕНДА ОБОРУДОВАНИЯ</div>
             </div>
             <div class="mt30">
                 <p>Мы создаём цепляющие фото и видео для решения ваших маркетинговых задач.</p>
@@ -142,7 +151,7 @@
         <div class="section-image info-image"></div>
     </div>
 </section>
-<div style="position: relative;">
+<div class="slider-block">
     <div class="slider variable-width">
         <div class="slider-image">
             <img src="img/slide (1).jpg" alt="">
@@ -178,7 +187,7 @@
 <section id="design">
     <div class="container">
         <div class="partners">
-            <div class="title">Наши партнеры</div>
+            <div class="title">Наши партнёры</div>
             <div class="partners-logo">
                 <div class="slider-image">
                     <img src="img/logo-partner-bio.svg" alt="">
@@ -199,21 +208,22 @@
 <section id="design">
     <div class="container">
         <div class="footer">
-            <div>
-                <img class="logo" src="img/logo-bio.svg" alt="logo">
+            <div class="block logo-block">
+                <img class="footer-logo" src="img/logo-bio.svg" alt="logo">
                 <div>423455, г.Альметьевск, ул.Шевченко, д.180 (2-й корпус Школы анимации «А1002»)</div>
+                <div style="color: #948F9E; font-size: 16px;;">© 2023–2024 АНО ДО «Академия цифрового творчества»</div>
             </div>
-            <div>
+            <div class="block contact-block">
                 <div class="title">Мы на связи</div>
-                <div>
+                <div class="contacts">
                     <div>+7 (917) 225-42-34</div>
                     <div>INFO@ALMETRIKA.RU</div>
                 </div>
             </div>
-            <div>
+            <div class="bot-block block">
                 <div class="title">Наш Телеграм-бот</div>
-                <div>
-                    <img class="logo" src="img/logo-bio.svg" alt="logo">
+                <div class="button-bot">
+                    <img class="icon-bot" src="img/telegram.svg" alt="logo">
                     <div>@biodigit_bot_example</div>
                 </div>
             </div>
