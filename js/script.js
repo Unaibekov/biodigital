@@ -3,7 +3,7 @@ $( () => {
 	// On Scroll Functionality
 	$(window).scroll( () => {
 		var windowTop = $(window).scrollTop();
-		windowTop > 150 ? $('.header').addClass('header-scroll') : $('.header').removeClass('header-scroll');
+		windowTop > 150 ? $('.header-content').addClass('header-scroll') : $('.header-content').removeClass('header-scroll');
 		windowTop > 150 ? $('.header-container').addClass('header-container-scroll') : $('.header-container').removeClass('header-container-scroll');
         windowTop > 150 ? $('#top-second').addClass('top-second-open') : $('#top-second').removeClass('top-second-open');
 	});
@@ -16,16 +16,16 @@ $( () => {
 	});
 
     // Плавное появление меню при нажатии на гамбургер
-    $('.menu-toggle').click(function() {
-        $('.menu').addClass('open');
-        $('.nav').addClass('open');
+    $('.open-menu').click(function() {
+        $('.overlay').fadeToggle(300); // Управление оверлеем
+        $('.nav').addClass('nav-open');
         $('body').css('overflow','hidden');
     });
 
-    $('.close-button').click(function() {
-        $('.menu').removeClass('open');
-        $('.nav').removeClass('open');
+    $('.close-menu, .overlay').click(function() {
+        $('.nav').removeClass('nav-open');
         $('body').css('overflow','auto');
+        $('.overlay').fadeOut(300); // Управление оверлеем
     });
 
     $('nav a[href^="#"]').on('click', function(event) {
@@ -33,12 +33,12 @@ $( () => {
         if( target.length ) {
             event.preventDefault();
             $('html, body').stop().animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top - 120
             }, 500);
             $('nav a').removeClass('active');
             $(this).addClass('active');
-            $('.menu').removeClass('open');
-            $('.nav').removeClass('open');
+            $('.nav').removeClass('nav-open');
+            $('.overlay').fadeOut(300); // Управление оверлеем
             $('body').css('overflow','auto');
         }
     });
