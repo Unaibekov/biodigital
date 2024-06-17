@@ -91,7 +91,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    text-align: center;
+    text-align: left;
 }
 .contacts a {
     color: var(--main);
